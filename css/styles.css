@@ -143,9 +143,7 @@ ul {
 .auth-nav .link:focus {
   color: #2196f3;
 }
-/*.icon {
-  margin-right: 10px;
-}*/
+
 .auth-nav .link::before {
   content: "";
   background-image: url(../images/envelope.svg);
@@ -448,6 +446,7 @@ ul {
   line-height: 1.71;
   font-style: normal;
   margin-right: auto;
+  margin-bottom: 28px;
 }
 .street {
   color: var(--white-color);
@@ -495,14 +494,44 @@ ul {
 }
 .footer-links li {
   margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
 }
+.footer-links li:hover,
+.footer-links:focus {
+  background-color: var(--accent-color);
+}
+.instagram-icon {
+  background-image: url(../images/instagram-footer.svg);
+  background-size: 20px 20px;
+}
+.twitter-icon {
+  background-image: url(../images/Vector.svg);
+  background-size: 20px 16.25px;
+}
+.facebook-icon {
+  background-image: url(../images/facebook-join.svg);
+  background-size: 20px 20px;
+}
+
+.linkedin-icon {
+background-image: url(../images/linkedin-footer.svg);
+background-size: 20px 20px;
+}
+
 .footer-links li:last-child {
   margin-right: 0px;
 }
 
 .footer-links li :hover,
 .footer-links li :focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .bottom-info {
@@ -524,6 +553,14 @@ ul {
   padding: 10px 62px 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.sign::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  margin-left: 10px;
+  background-size: contain;
 }
 
 /*Порфолио main */
