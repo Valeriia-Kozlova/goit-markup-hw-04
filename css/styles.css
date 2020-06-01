@@ -425,6 +425,15 @@ ul {
 .customers-list .link {
   display: block;
 }
+.customers-logo {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
 
 /*Футер*/
 .blocks {
@@ -655,6 +664,3 @@ background-size: 20px 20px;
   margin-right: auto;
 /*outline: 1px solid blue;*/
 }
-
-
-____________________
