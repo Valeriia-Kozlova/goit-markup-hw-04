@@ -453,63 +453,38 @@ ul {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  fill: #AFB1B8;
 }
 .customers-container:hover {
-border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
+
 .customers-one {
   width: 44.3px;
   height: 49px;
-  fill: #AFB1B8;
 }
-.customers-one:hover {
-  fill: var(--accent-color);
-}
-
 .customers-two {
   width: 40px;
   height: 52px;
-  fill: #AFB1B8;
 }
-.customers-two:hover {
-  fill: var(--accent-color);
-}
-
 .customers-three {
   width: 41px;
   height: 42.6px;
-  fill: #AFB1B8;
 }
-.customers-three:hover {
-  fill: var(--accent-color);
-}
-
 .customers-four {
   width: 79.7px;
   height: 42px;
-  fill: #AFB1B8;
 }
-.customers-four:hover {
-  fill: var(--accent-color);
-}
-
 .customers-five {
   width: 59px;
   height: 47px;
-  fill: #AFB1B8;
 }
-.customers-five:hover {
-  fill: var(--accent-color);
-}
-
 .customers-six {
   width: 88.5px;
   height: 45.4px;
-  fill: #AFB1B8;
 }
-.customers-six:hover {
-  fill: var(--accent-color);
-}
+
 /*Футер*/
 .blocks {
   display: flex;
