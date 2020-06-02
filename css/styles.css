@@ -270,7 +270,31 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
+.advantages-icon {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background: var(--background-color);
+}
+.antenna-icon {
+  width: 70px;
+  height: 70px;
+}
+.clock-icon {
+  width: 67px;
+  height: 70px;
+}
+.computer-icon {
+  width: 70px;
+  height: 70px;
+}
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+}
 
+/*
 .antenna-icon::before {
   background-image: url(../images/group.svg);
 }
@@ -283,6 +307,7 @@ ul {
 .astronaut-icon::before {
   background-image: url(../images/astronaut.svg);
 }
+*/
 
 /*.advantages .link:hover,
 .advantages .link:focus {
@@ -552,20 +577,24 @@ ul {
   margin-top: 21px;
 }
 .footer-links li {
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  
 }
 .footer-links li:hover,
 .footer-links:focus {
   background-color: var(--accent-color);
 }
+
+.instagram-svg {
+  fill:var(--white-color);
+}
+
 /*
 .instagram-icon {
   background-image: url(../images/instagram-footer.svg);
