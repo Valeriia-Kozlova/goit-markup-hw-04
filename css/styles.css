@@ -143,7 +143,26 @@ ul {
 .auth-nav .link:focus {
   color: #2196f3;
 }
+.icon-envelope {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.icon-envelope:hover {
+  fill: var(--accent-color);
+}
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.icon-phone:hover {
+  fill: var(--accent-color);
+}
 
+/*
 .auth-nav .link::before {
   content: "";
   background-image: url(../images/envelope.svg);
@@ -156,6 +175,7 @@ ul {
   height: 14.94px;
   background-image: url(../images/cell-phone.svg);
 }
+*/
 /*Герой*/
 .hero-container {
   padding-top: 200px;
@@ -516,6 +536,7 @@ ul {
 .footer-links:focus {
   background-color: var(--accent-color);
 }
+/*
 .instagram-icon {
   background-image: url(../images/instagram-footer.svg);
   background-size: 20px 20px;
@@ -532,7 +553,7 @@ ul {
 .linkedin-icon {
 background-image: url(../images/linkedin-footer.svg);
 background-size: 20px 20px;
-}
+}*/
 
 .footer-links li:last-child {
   margin-right: 0px;
