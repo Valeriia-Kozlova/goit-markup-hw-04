@@ -280,6 +280,7 @@ ul {
 .antenna-icon {
   width: 70px;
   height: 70px;
+
 }
 .clock-icon {
   width: 67px;
@@ -394,16 +395,14 @@ ul {
 .command .item {
   background-color: var(--white-color);
   border-radius: 4px;
-
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .command img {
   display: block;
-  width: 100%;
-  height: auto;
+  
 }
 .command-list .link {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -429,21 +428,38 @@ ul {
   display: flex;
   justify-content: center;
 }
-.networks .network-item {
-  margin-right: 39px;
-  margin-bottom: 36px;
-}
 
-.networks .network-item:hover,
-.networks .network-item:focus {
-  background-color: var(--accent-color)
+.networks .network-item {
+  margin-right: 10px;
+  margin-bottom: 24px;
 }
 .networks .network-item:last-child {
   margin-right: 0px;
 }
 
-.networks img {
-  display: block;  
+.network-link {
+  display: block; 
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.network-link:hover,
+.network-link:focus{
+  background-color: var(--accent-color)
+}
+.instagram-svg,
+.twitter-svg,
+.facebook-svg,
+.linkedin-svg {
+  fill: #AFB1B8;
+  background-position: 50% 50%; 
+}
+
+.instagram-svg:hover,
+.twitter-svg:hover,
+.facebook-svg:hover,
+.linkedin-svg:hover {
+  fill: var(--white-color);
 }
 
 /*Постоянные клиенты*/
@@ -453,7 +469,6 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
   margin-bottom: 50px;
 }
 .customers-list {
@@ -577,22 +592,24 @@ ul {
   margin-top: 21px;
 }
 .footer-links li {
-  width: 44px;
-  height: 44px;
   margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
 }
-.footer-links li:hover,
-.footer-links:focus {
+.footer-links li:last-child {
+  margin-right: 0px;
+}
+.footer-links .network-link {
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.footer-links .network-link:hover,
+.footer-links .network-link:focus {
   background-color: var(--accent-color);
 }
-
-.instagram-svg {
-  fill:var(--white-color);
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  fill: var(--white-color);
+  background-position: 50% 50%; 
 }
 
 /*
@@ -614,14 +631,7 @@ background-image: url(../images/linkedin-footer.svg);
 background-size: 20px 20px;
 }*/
 
-.footer-links li:last-child {
-  margin-right: 0px;
-}
 
-.footer-links li :hover,
-.footer-links li :focus {
-  background-color: var(--accent-color);
-}
 
 .bottom-info {
   text-align: center;
