@@ -132,7 +132,7 @@ ul {
 }
 
 .auth-nav .link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,19 +147,14 @@ ul {
   width: 16px;
   height: 11.2px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
-.icon-envelope:hover {
-  fill: var(--accent-color);
-}
+
 .icon-phone {
   width: 10px;
   height: 15px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-.icon-phone:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /*
@@ -206,29 +201,40 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   margin-top: 0px;
   text-align: center;
 }
 /*Кнопка*/
 .button-web {
-  background-color:var(--accent-color);
-  color: var(--white-color);
-  font-family: inherit;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color:var(--accent-color);
+  color: var(--white-color);
+
+  border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
 }
-.button-web:hover,
-.button-web:focus {
-  background-color: var(--background-color);
-  color: var(--accent-color);
+
+.sign {
+  display: flex;
+  width: 200px;
+  padding: 10px 28px 10px 29px;
+  font-weight: 900;
+  margin-top: 21px;
+  fill: var(--white-color);
+}
+.icon-send {
+  margin-left: 10px;
 }
 
 /*Наши преимушества*/
@@ -447,26 +453,14 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: #AFB1B8;
 }
 .network-link:hover,
 .network-link:focus{
-  background-color: var(--accent-color)
-}
-.instagram-svg,
-.twitter-svg,
-.facebook-svg,
-.linkedin-svg {
-  display: inl;
-  fill: #AFB1B8;
-  background-position: 50% 50%; 
-}
-
-.instagram-svg:hover,
-.twitter-svg:hover,
-.facebook-svg:hover,
-.linkedin-svg:hover {
+  background-color: var(--accent-color);
   fill: var(--white-color);
 }
+
 
 /*Постоянные клиенты*/
 .customers .name {
@@ -610,12 +604,8 @@ ul {
 .footer-links .network-link:focus {
   background-color: var(--accent-color);
 }
-.instagram-footer,
-.twitter-footer,
-.facebook-footer,
-.linkedin-footer {
+.footer-links .network-link {
   fill: var(--white-color);
-  background-position: 50% 50%; 
 }
 
 /*
@@ -637,8 +627,6 @@ background-image: url(../images/linkedin-footer.svg);
 background-size: 20px 20px;
 }*/
 
-
-
 .bottom-info {
   text-align: center;
   margin: 0px;
@@ -648,22 +636,6 @@ background-size: 20px 20px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.03em;
-}
-.sign {
-  font-weight: 900;
-  display: flex;
-  width: 200px;
-  height: 50px;
-  margin-top: 21px;
-  padding: 10px 62px 10px 29px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.icon-sign {
-  display: flex;
-  margin-left: 10px;
-  fill: var(--white-color);
 }
 
 
@@ -690,7 +662,9 @@ background-size: 20px 20px;
   padding: 6px 22px;
   
   border-radius: 4px;
+  border-style: none;
   background-color: var(--background-color);
+  cursor: pointer;
 }
 .filters li:not(:last-child) {
   margin-right: 8px;
@@ -702,6 +676,11 @@ background-size: 20px 20px;
   background-color:var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
+}
+.filters .button.current {
+  background-color:var(--accent-color);
+  color: var(--white-color);
+  cursor: pointer;
 }
 /*Наши работы*/
 .portfolio .title {
@@ -740,8 +719,8 @@ background-size: 20px 20px;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
+  border: 1px solid #EEEEEE;
 }
 .flex-element:nth-child(3n) {
   margin-right: 0px;
@@ -749,6 +728,10 @@ background-size: 20px 20px;
 
 .flex-element:nth-last-child(-n+3) {
   margin-bottom: 0px;
+}
+.flex-element:hover,
+.flex-element:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .container{
