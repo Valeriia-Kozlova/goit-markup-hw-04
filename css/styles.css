@@ -535,6 +535,7 @@ ul {
   padding-top: 48px;
 }
 .footer .logo {
+  display: block;
   color: var(--white-color);
   margin-bottom: 10px;
 }
