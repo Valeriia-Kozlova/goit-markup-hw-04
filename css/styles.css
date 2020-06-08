@@ -356,6 +356,7 @@ ul {
   display: block;
 }
 .work-list .item {
+  position: relative;
   margin-right: 30px;
 }
 .work-list .item:last-child {
@@ -367,6 +368,9 @@ ul {
   height: auto;
 }
 .section .title {
+  position: absolute;
+  width: 100%;
+  bottom:0;
   color:var(--white-color);
   background-color:var(--background-section);
   font-weight: 700;
